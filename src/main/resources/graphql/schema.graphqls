@@ -1,0 +1,23 @@
+type Query {
+    login(nameInput:String,passwordInput:String): String
+}
+type Mutation {
+    register(customer: Customer): String
+}
+
+input Customer{
+    name:String
+    userName:String
+    password:String
+    address:String
+    country:String
+    state:String
+    email:String
+    contactNo:Float
+    birthDate:String
+    accountType:String
+    initialDeposit:Float
+    branchName:String
+    proofType:String
+    documentNo:String
+}
